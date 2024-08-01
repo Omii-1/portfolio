@@ -58,7 +58,7 @@ export function Contact() {
   return (
     <div>
       <TransitionEffect />
-      <Layout className="!py-10 xl:!px-10 sm:px-14">
+      <Layout className="!py-10 xl:!px-10 sm:px-14 xs:!py-20">
         <div className="grid grid-cols-12 gap-x-5 md:gap-y-8 items-center">
           <motion.div initial={{y:-200}} whileInView={{y:0, transition:{duration: 0.5}, ease:"easeInOut"}} className="col-span-6 md:col-span-12 items-center">       
             <div className="mb-6 ">

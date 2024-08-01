@@ -15,7 +15,7 @@ export function Home() {
     <>
       <TransitionEffect />
       <div className="flex items-center justify-center  text-dark w-full ">
-        <Layout className=" !md:p-16 !sm:pt-8">
+        <Layout className=" !md:p-16 !sm:pt-8 xs:!py-28">
           <div className="flex items-center justify-center w-full lg:flex-col">
             <div className="w-1/2 md:w-full flex justify-center">
               <img src={profile} alt="om juvatkar" className=" h-auto md:inline-block w-full md:w-1/2 sm:w-2/3 " />
