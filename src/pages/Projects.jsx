@@ -14,14 +14,14 @@ const FramerImage = motion.img
 
 const FeaturedProject = ({ stack, title, summary, img, link, github }) => {
   return (
-    <article className="relative w-full flex items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light shadow-2xl p-12 dark:bg-dark lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4" >
+    <article className="relative w-full flex items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light shadow-2xl p-12 dark:bg-dark lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 " >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> 
       <a
         href={link}
         target="_blank"
         className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg border border-solid border-dark dark:border-light"
       >
-        <FramerImage src={img} alt={title} whileHover={{scale: 1.05}} transition={{duration: 0.2}}/>
+        <FramerImage src={img} alt={title} whileHover={{scale: 1.05}} transition={{duration: 0.2}}  />
       </a>
       <div className="w-1/2 lg:w-full flex flex-col items-start justify-between pl-6 lg:pl-0 lg:pt-6">
         <a
@@ -39,7 +39,7 @@ const FeaturedProject = ({ stack, title, summary, img, link, github }) => {
             <div key={index}>{data}</div>
           ))}
         </p>
-        <div className="mt-2 pr-6 w-full flex items-center gap-8 relative justify-end lg:justify-start">
+        <div className="mt-2 pr-6 w-full flex items-center gap-8 sm:gap-5 relative justify-end lg:justify-start">
           <motion.a
             href={github}
             target="_blank"
@@ -54,7 +54,7 @@ const FeaturedProject = ({ stack, title, summary, img, link, github }) => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
           >
-            <GrDeploy  className="dark:text-light h-12 w-12 sm:h-8 sm:w-8" />
+            <GrDeploy  className="dark:text-light h-12 w-12 sm:h-7 sm:w-7" />
           </motion.a>
         </div>
       </div>
@@ -83,7 +83,7 @@ const Project = ({ title, img, link, github }) => {
             {title}
           </h2>
         </a>
-        <div className="mt-2 dark:text-light flex items-center gap-8">
+        <div className="mt-2 dark:text-light flex items-center gap-8 sm:gap-5">
           <motion.a
             href={github}
             target="_blank"
@@ -98,7 +98,7 @@ const Project = ({ title, img, link, github }) => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
           >
-            <GrDeploy className="dark:text-light h-12 w-12 sm:h-8 sm:w-8" />
+            <GrDeploy className="dark:text-light h-12 w-12 sm:h-7 sm:w-7" />
           </motion.a>
         </div>
       </div>

@@ -71,7 +71,7 @@ export function About() {
                 <span className="inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold text-primary dark:text-primaryDark">
                   <AnimatedNumbers value={1} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-primary/75 dark:text-primaryDark/75">Years of Experience</h2>
+                <h2 className="text-xl md:text-lg sm:text-base xs:text-sm font-medium capitalize text-primary/75 dark:text-primaryDark/75">Years of Experience</h2>
               </div>
             </div>
 
