@@ -62,7 +62,7 @@ export function Contact() {
         <div className="grid grid-cols-12 gap-x-5 md:gap-y-8 items-center">
           <motion.div initial={{y:-200}} whileInView={{y:0, transition:{duration: 0.5}, ease:"easeInOut"}} className="col-span-6 md:col-span-12 items-center">       
             <div className="mb-6 ">
-              <h1  className="text-primary dark:text-primaryDark text-8xl md:text-7xl sm:text-5xl xs:text-4xl font-bold mb-2 text-start md:text-center ">
+              <h1  className="text-primary dark:text-primaryDark text-8xl md:text-7xl sm:text-5xl font-bold mb-2 text-start md:text-center ">
                 Get in Touch
               </h1>
               <p className="text-2xl md:text-xl sm:text-base xs:text-sm text-dark/75 dark:text-light/75 md:text-center">
@@ -97,10 +97,11 @@ export function Contact() {
           <div className="col-span-6 md:col-span-12 self-center sm:px-4 xs:px-0">
             <motion.form onSubmit={onSubmit} initial={{y:200}} whileInView={{y:0, transition:{duration: 0.5}, ease:"easeInOut"}} className="flex flex-col border border-solid border-r-8 border-b-8 border-dark dark:border-light p-12 sm:p-8 xs:p-6 w-full gap-4 sm:gap-2 rounded-2xl shadow-2xl bg-light dark:bg-dark ">
               <div className="flex flex-col gap-2 sm:gap-1 xs:gap-0.5">
-                <label htmlFor="" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
+                <label htmlFor="name" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
                   Name
                 </label>
                 <input
+                  id="name"
                   name="name"
                   type="text"
                   placeholder="John Doe"
@@ -110,10 +111,11 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-2 sm:gap-1 xs:gap-0.5">
-                <label htmlFor="" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
+                <label htmlFor="email" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
                   Email
                 </label>
                 <input
+                  id="email"
                   name="email"
                   type="email"
                   placeholder="john@gmail.com"
@@ -123,10 +125,11 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-2 sm:gap-1 xs:gap-0.5">
-                <label htmlFor="" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
+                <label htmlFor="message" className="text-2xl sm:text-xl xs:text-lg font-semibold dark:text-light">
                   Message
                 </label>
                 <textarea
+                  id="message"
                   name="message"
                   placeholder="Message . . ."
                   rows={5}
